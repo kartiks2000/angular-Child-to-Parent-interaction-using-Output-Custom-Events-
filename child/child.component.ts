@@ -8,7 +8,7 @@ export class childComponent{
 
     na = "";
 
-    @Output sendingname = new EventEmitter();
+    @Output() sendingname = new EventEmitter();
 
     changing = (event) => {
         this.na = event.target.value;
